@@ -1,0 +1,64 @@
+# ============================================================
+# macOS 系统垃圾文件（最易误提交）
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Thumbs.db
+.DocumentRevisions-V100
+.TemporaryItems
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ============================================================
+# Xcode / SwiftPM 构建缓存与用户数据
+# ============================================================
+DerivedData/
+.build/
+.swiftpm/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+*.xcuserstate
+*.hmap
+*.dSYM.zip
+*.dSYM
+
+# ============================================================
+# 本项目构建产物（可从源码重新生成，不入库）
+# ============================================================
+/vibedeck
+/vibedeck.app/
+/dist/
+# 本机测试截图（可能包含本机蓝牙名、菜单栏等状态信息）
+/screenshots/
+BuildStamp.txt
+# 图标中间产物（由 make_icon.swift 生成，可再生的 iconset）
+assets/vibedeck.iconset/
+# 注意：assets/vibedeck.icns 是构建 app 所需资源，保留入库
+
+# ============================================================
+# 日志 / 临时文件 / 编辑器
+# ============================================================
+*.log
+*.tmp
+*.cache
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ============================================================
+# 本地私有配置（避免本机标识/密钥误入库）
+# ============================================================
+*.local
+.env
+.env.*
+!.env.example
